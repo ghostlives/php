@@ -12,6 +12,7 @@ class Upload extends AppController
 {
     public function upload()
     {
+        // Sample for encrypting/ decrypting image file
         if ($this->request->is('post')) {
             $fileUpload = $_FILES["fileToUpload"];
             $oldSize = $fileUpload['size'];
